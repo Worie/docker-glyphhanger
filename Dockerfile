@@ -2,10 +2,12 @@ FROM buildkite/puppeteer
 
 ADD ./setup-scripts /setup-scripts
 
-WORKDIR /setup-scripts
+RUN mkdir /hwd
 
-RUN chmod a+x ./*.sh 
-RUN ./install-python.sh && ./install-fonttools.sh && ./install-git.sh
-RUN ./install-glyphhanger.sh
+WORKDIR /hwd
+
+RUN chmod a+x /setup-scripts/*.sh 
+RUN /setup-scripts/install-python.sh && /setup-scripts/install-fonttools.sh && /setup-scripts/install-git.sh
+RUN /setup-scripts/install-glyphhanger.sh
 
 ENTRYPOINT ["/bin/bash", "-c", "\"$@\"", "--"]
