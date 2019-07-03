@@ -1,6 +1,6 @@
 #!/bin/bash
 
-wget -O docker-glyphhanger.sh https://raw.githubusercontent.com/Worie/docker-glyphhanger/master/docker-ghlyphhanger.sh
+wget -O docker-glyphhanger.sh https://raw.githubusercontent.com/Worie/docker-glyphhanger/master/docker-glyphhanger.sh
 mkdir ~/.docker-glyphhanger
 chmod a+x ./docker-glyphhanger.sh
 mv ./docker-glyphhanger.sh ~/.docker-glyphhanger
