@@ -8,7 +8,13 @@ This will:
 3. Check if you have `docker` cli installed
 4. Pull the `wopolow/docker-glyphhanger` image from DockerHub
 
+After successful install, you should see confirmation that you can use `glyphy` command from now on.
 
+## Usage
+
+`glyphy https://google.com --string`
+
+Syntax supports everything that regular `glyphhanger` does.
 
 
 ## Details 
