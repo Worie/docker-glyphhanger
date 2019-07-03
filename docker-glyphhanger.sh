@@ -14,8 +14,8 @@ then
 fi
 
 if ! [ -z "$1" ] && [ $1 != "install" ]
-then 
-    docker container run --rm -v $(pwd):/hwd wopolow/glyphhanger bash && glyphhanger "$@"
+then
+    docker container run --rm -v $(pwd):/hwd wopolow/glyphhanger glyphhanger $@
 else
     echo "docker-glyphhanger: internal installation complete";
 fi
