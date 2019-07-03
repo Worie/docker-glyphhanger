@@ -4,7 +4,7 @@ wget -O docker-glyphhanger.sh https://raw.githubusercontent.com/Worie/docker-gly
 mkdir ~/.docker-glyphhanger
 chmod a+x ./docker-glyphhanger.sh
 mv ./docker-glyphhanger.sh ~/.docker-glyphhanger
-~/.docker-glyphhanger/docker-glyphhanger.sh
+~/.docker-glyphhanger/docker-glyphhanger.sh install
 
 echo "alias glyphy='~/.docker-glyphhanger/docker-glyphhanger.sh'" >> ~/.bashrc
 source ~/.bashrc
